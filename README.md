@@ -2,11 +2,11 @@
 
 1. Clone the repository to your home folder:
     ```
-    git clone https://github.com/linyh212/arch-linux-setup.git ~/linyh
+    git clone https://github.com/linyh212/linyh-arch.git ~/linyh
     ```
 2. Navigate to the installer directory:
     ```
-    cd ~/arch-linux-setup
+    cd ~/linyh-arch
     ```
 3. Run the installation script with sudo:
      ```
