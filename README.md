@@ -2,7 +2,7 @@
 
 1. Clone the repository to your home folder:
     ```
-    git clone https://github.com/linyh212/linyh-arch.git ~/linyh
+    git clone https://github.com/linyh212/linyh-arch.git ~/linyh-arch
     ```
 2. Navigate to the installer directory:
     ```
