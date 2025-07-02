@@ -1,11 +1,6 @@
 #!/bin/bash
 
-# -------------------------------
-# Arch Linux + Hyprland Setup Script
-# Author: Compiled by ChatGPT
-# -------------------------------
-
-set -e  # Exit on any error
+Sset -e  # Exit on any error
 
 # Step 0: Ensure root privileges
 if [ "$EUID" -ne 0 ]; then
