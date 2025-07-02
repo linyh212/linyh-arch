@@ -2,11 +2,11 @@
 
 1. Clone the repository to your home folder:
     ```
-    git clone https://github.com/gaurav23b/simple-hyprland.git ~/simple-hyprland
+    git clone https://github.com/linyh212/arch-linux-setup.git ~/arch-hyprland
     ```
 2. Navigate to the installer directory:
     ```
-    cd ~/simple-hyprland/scripts/installer
+    cd ~/arch-linux-setup/installer
     ```
 3. Run the installation script with sudo:
      ```
