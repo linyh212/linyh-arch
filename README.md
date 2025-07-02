@@ -2,7 +2,7 @@
 
 1. Clone the repository to your home folder:
     ```
-    git clone https://github.com/linyh212/arch-linux-setup.git ~/arch-hyprland
+    git clone https://github.com/linyh212/arch-linux-setup.git ~/linyh
     ```
 2. Navigate to the installer directory:
     ```
