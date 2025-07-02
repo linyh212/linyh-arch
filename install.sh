@@ -65,7 +65,7 @@ echo "🎯 Installing Hyprland and related packages..."
 pacman -S --noconfirm hyprland xdg-desktop-portal-hyprland polkit-kde-agent dunst qt5-wayland qt6-wayland
 
 # 9. Copy Hyprland configuration file from repo to user config directory
-HYPR_CONFIG_SRC="$USER_HOME/arch-linux-setup/configs/hypr/hyprland.conf"
+HYPR_CONFIG_SRC="$USER_HOME/linyh-arch/configs/hypr/hyprland.conf"
 HYPR_CONFIG_DST="$USER_HOME/.config/hypr/hyprland.conf"
 if [ ! -f "$HYPR_CONFIG_SRC" ]; then
   echo "❌ Hyprland config not found at $HYPR_CONFIG_SRC"
@@ -78,7 +78,7 @@ cp -r "$HYPR_CONFIG_SRC" "$HYPR_CONFIG_DST"
 chown -R "$USERNAME:$USERNAME" "$USER_HOME/.config/hypr"
 
 # 10. Copy Dunst notification daemon config files
-DUNST_CONFIG_SRC="$USER_HOME/arch-linux-setup/configs/dunst"
+DUNST_CONFIG_SRC="$USER_HOME/linyh-arch/configs/dunst"
 DUNST_CONFIG_DST="$USER_HOME/.config/dunst"
 if [ ! -d "$DUNST_CONFIG_SRC" ]; then
   echo "❌ Dunst config not found at $DUNST_CONFIG_SRC"
@@ -142,37 +142,37 @@ echo "⚙️ Installing utilities and copying configs..."
 
 pacman -S --noconfirm waybar
 mkdir -p "$USER_HOME/.config"
-cp -r "$USER_HOME/arch-linux-setup/configs/waybar" "$USER_HOME/.config/"
+cp -r "$USER_HOME/linyh-arch/configs/waybar" "$USER_HOME/.config/"
 chown -R "$USERNAME:$USERNAME" "$USER_HOME/.config/waybar"
 
 sudo -u "$USERNAME" yay -S --noconfirm tofi
-cp -r "$USER_HOME/arch-linux-setup/configs/tofi" "$USER_HOME/.config/"
+cp -r "$USER_HOME/linyh-arch/configs/tofi" "$USER_HOME/.config/"
 chown -R "$USERNAME:$USERNAME" "$USER_HOME/.config/tofi"
 
 pacman -S --noconfirm cliphist
 
 sudo -u "$USERNAME" yay -S --noconfirm swww
 mkdir -p "$USER_HOME/.config/assets/backgrounds"
-cp -r "$USER_HOME/arch-linux-setup/assets/backgrounds"/* "$USER_HOME/.config/assets/backgrounds/"
+cp -r "$USER_HOME/linyh-arch/assets/backgrounds"/* "$USER_HOME/.config/assets/backgrounds/"
 chown -R "$USERNAME:$USERNAME" "$USER_HOME/.config/assets"
 
 sudo -u "$USERNAME" yay -S --noconfirm hyprpicker
 
 sudo -u "$USERNAME" yay -S --noconfirm hyprlock
 mkdir -p "$USER_HOME/.config/hypr"
-cp "$USER_HOME/arch-linux-setup/configs/hypr/hyprlock.conf" "$USER_HOME/.config/hypr/"
+cp "$USER_HOME/linyh-arch/configs/hypr/hyprlock.conf" "$USER_HOME/.config/hypr/"
 chown -R "$USERNAME:$USERNAME" "$USER_HOME/.config/hypr"
 
 sudo -u "$USERNAME" yay -S --noconfirm wlogout
 mkdir -p "$USER_HOME/.config/wlogout" "$USER_HOME/.config/assets"
-cp -r "$USER_HOME/arch-linux-setup/configs/wlogout"/* "$USER_HOME/.config/wlogout/"
-cp -r "$USER_HOME/arch-linux-setup/assets/wlogout"/* "$USER_HOME/.config/assets/"
+cp -r "$USER_HOME/linyh-arch/configs/wlogout"/* "$USER_HOME/.config/wlogout/"
+cp -r "$USER_HOME/linyh-arch/assets/wlogout"/* "$USER_HOME/.config/assets/"
 chown -R "$USERNAME:$USERNAME" "$USER_HOME/.config/wlogout" "$USER_HOME/.config/assets"
 
 sudo -u "$USERNAME" yay -S --noconfirm grimblast
 
 sudo -u "$USERNAME" yay -S --noconfirm hypridle
-cp "$USER_HOME/arch-linux-setup/configs/hypr/hypridle.conf" "$USER_HOME/.config/hypr/"
+cp "$USER_HOME/linyh-arch/configs/hypr/hypridle.conf" "$USER_HOME/.config/hypr/"
 chown -R "$USERNAME:$USERNAME" "$USER_HOME/.config/hypr"
 
 # 16. Install theming packages and extract themes to system directories
@@ -180,21 +180,21 @@ echo "🎨 Installing theming packages and extracting themes..."
 
 pacman -S --noconfirm nwg-look qt5ct qt6ct kvantum
 
-if [ -f "$USER_HOME/arch-linux-setup/assets/themes/Catppuccin-Mocha.tar.xz" ]; then
-  tar -xvf "$USER_HOME/arch-linux-setup/assets/themes/Catppuccin-Mocha.tar.xz" -C /usr/share/themes/
+if [ -f "$USER_HOME/linyh-arch/assets/themes/Catppuccin-Mocha.tar.xz" ]; then
+  tar -xvf "$USER_HOME/linyh-arch/assets/themes/Catppuccin-Mocha.tar.xz" -C /usr/share/themes/
 else
   echo "❌ Theme archive not found, skipping theme extraction."
 fi
 
-if [ -f "$USER_HOME/arch-linux-setup/assets/icons/Tela-circle-dracula.tar.xz" ]; then
-  tar -xvf "$USER_HOME/arch-linux-setup/assets/icons/Tela-circle-dracula.tar.xz" -C /usr/share/icons/
+if [ -f "$USER_HOME/linyh-arch/assets/icons/Tela-circle-dracula.tar.xz" ]; then
+  tar -xvf "$USER_HOME/linyh-arch/assets/icons/Tela-circle-dracula.tar.xz" -C /usr/share/icons/
 else
   echo "❌ Icon archive not found, skipping icon extraction."
 fi
 
 sudo -u "$USERNAME" yay -S --noconfirm kvantum-theme-catppuccin-git
 
-cp -r "$USER_HOME/arch-linux-setup/configs/kitty" "$USER_HOME/.config/"
+cp -r "$USER_HOME/linyh-arch/configs/kitty" "$USER_HOME/.config/"
 chown -R "$USERNAME:$USERNAME" "$USER_HOME/.config/kitty"
 
 # 17. (Optional) Install Neovim and LazyVim config
