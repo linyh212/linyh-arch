@@ -6,7 +6,7 @@
     ```
 2. Navigate to the installer directory:
     ```
-    cd ~/arch-linux-setup/installer
+    cd ~/arch-linux-setup
     ```
 3. Run the installation script with sudo:
      ```
