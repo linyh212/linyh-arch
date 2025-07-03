@@ -1,58 +1,69 @@
 [global]
-    follow = mouse
-    indicate_hidden = yes
+# Font settings
+font = JetBrainsMono Nerd Font 10
 
-    offset = 10x10
+# Notification position
+offset = 30x30
+origin = top-right
 
-    notification_height = 0
+# Window size
+width = 300
+height = 100
+gap_size = 8
 
-    separator_height = 2
+# Notification timeout (ms)
+timeout = 4000
+frame_width = 2
+separator_height = 2
+padding = 10
+horizontal_padding = 12
+text_icon_padding = 8
 
-    padding = 8
-    horizontal_padding = 8
-    text_icon_padding = 0
-    frame_width = 2
+# Transparency (0-100), requires a compositor
+transparency = 15
 
-    frame_color = "#a6adc8"
-    separator_color = frame
+# Icon support
+enable_posix_regex = true
+icon_position = left
+icon_theme = Papirus
 
-    sort = yes
-    idle_threshold = 120
-    font = monospace 10
-    line_height = 0
-    markup = full
-    alignment = left
-    vertical_alignment = center
-    show_age_threshold = 60
-    word_wrap = yes
-    stack_duplicates = true
-    hide_duplicate_count = false
+# Progress bar
+progress_bar = true
+progress_bar_height = 10
+progress_bar_frame_width = 0
 
-    show_indicators = yes
+# Follow mouse focus
+follow = keyboard
 
-    min_icon_size = 0
-    max_icon_size = 64
+# D-Bus title / class
+dmenu = dmenu -p dunst:
 
-    icon_path = /usr/share/icons/Papirus-Dark/16x16/status/:/usr/share/icons/Papirus-Dark/16x16/devices/:/usr/share/icons/Papirus-Dark/16x16/actions/:/usr/share/icons/Papirus-Dark/16x16/animations/:/usr/share/icons/Papirus-Dark/16x16/apps/:/usr/share/icons/Papirus-Dark/16x16/categories/:/usr/share/icons/Papirus-Dark/16x16/emblems/:/usr/share/icons/Papirus-Dark/16x16/emotes/:/usr/share/icons/Papirus-Dark/16x16/devices/mimetypes:/usr/share/icons/Papirus-Dark/16x16/panel/:/usr/share/icons/Papirus-Dark/16x16/places/
+# Wayland workaround
+force_xwayland = true
 
-    dmenu = /usr/bin/wofi -p dunst:
-    browser = /usr/bin/firefox --new-tab
+# History & duplicate handling
+history_length = 20
+show_indicators = true
+ignore_newline = no
+sort = yes
 
-    title = Dunst
-    class = Dunst
+# Close key bindings
+close = ctrl+space
+close_all = ctrl+shift+space
 
-    corner_radius = 10
-    timeout = 5
-
+# Notification categories
 [urgency_low]
-    background = "#1e1e2e"
-    foreground = "#CDD6F4"
+background = "#1e1e2e"
+foreground = "#a6adc8"
+timeout = 3
 
 [urgency_normal]
-    background = "#1e1e2e"
-    foreground = "#CDD6F4"
+background = "#1e1e2e"
+foreground = "#a6adc8"
+timeout = 6
 
 [urgency_critical]
-    background = "#1e1e2e"
-    foreground = "#CDD6F4"
-    frame_color = "#FAB387"
+background = "#1e1e2e"
+foreground = "#f38ba8"
+frame_color = "#f38ba8"
+timeout = 0
