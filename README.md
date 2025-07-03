@@ -8,9 +8,14 @@
     ```
     cd ~/linyh-arch
     ```
-3. Run the installation script with sudo:
+3. Grant execute permission:
+   ```
+   chmod +x install.sh
+   ```
+
+4. Run the installation script with sudo:
      ```
-    sudo sh install.sh
+    ./install.sh
     ```
 
 ## Key Bindings 🎹
