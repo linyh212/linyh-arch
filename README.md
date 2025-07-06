@@ -1,18 +1,9 @@
 ## Quick Installation Script 🚀
 
-1. Clone the repository to your home folder:
-    ```
     git clone https://github.com/linyh212/linyh-arch.git ~/linyh-arch
-    ```
-2. Navigate to the installer directory:
-    ```
     cd ~/linyh-arch
-    ```
-3. Run the installation script with sudo:
-     ```
-    sudo sh install.sh
-    ```
-
+    chmod +x install.sh
+    ./install.sh
 ## Key Bindings 🎹
 
 #### General
