@@ -58,12 +58,15 @@ main() {
     fi
 
     log "Installing Hyprland and components..."
-    install_multi_if_not_exists hyprlock hypridle wlogout \
-        swww hyprpaper swaybg \
-        waybar playerctl brightnessctl pamixer jq wl-clipboard pavucontrol \
-        noto-fonts-cjk noto-fonts ttf-dejavu ttf-liberation \
-        ttf-jetbrains-mono-nerd ttf-fira-code-nerd ttf-hack-nerd \
-        neovim kitty
+    install_multi_if_not_exists \
+    hyprland hyprlock hypridle wlogout \
+    swww hyprpaper swaybg \
+    waybar playerctl brightnessctl pamixer jq wl-clipboard pavucontrol \
+    grim slurp swappy mako \
+    network-manager-applet xdg-desktop-portal-hyprland \
+    noto-fonts-cjk noto-fonts ttf-dejavu ttf-liberation \
+    ttf-jetbrains-mono-nerd ttf-fira-code-nerd ttf-hack-nerd \
+    neovim kitty
 
     log "Installing Fcitx5 and Chewing ..."
     install_multi_if_not_exists fcitx5-im fcitx5 fcitx5-gtk fcitx5-qt fcitx5-configtool fcitx5-chewing
