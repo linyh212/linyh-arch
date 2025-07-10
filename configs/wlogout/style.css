@@ -11,14 +11,16 @@ window {
 }
 
 button {
-    background-color: #11111b;
-    border-style: solid;
-    /* border-width: 2px; */
-    border-radius: 50px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    margin: 15px;
+    border-radius: 0;
+    border-color: black;
+	text-decoration-color: #FFFFFF;
+    color: #FFFFFF;
+	background-color: #1E1E1E;
+	border-style: solid;
+	border-width: 1px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
 }
 
 button:active,
