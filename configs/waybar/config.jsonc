@@ -39,7 +39,7 @@
     "backlight": {
         "device": "intel_backlight",
         "format": "{icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""] // 改為相容圖示 (太陽)
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
 
     "battery": {
@@ -60,7 +60,7 @@
         "format": "{icon} {volume}%",
         "format-muted": "",  // 正確的靜音圖示 (nf-mdi-volume-mute)
         "format-icons": {
-            "default": ["", "", ""]  // 小音量、中音量、大音量
+            "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
     },
