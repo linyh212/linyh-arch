@@ -58,7 +58,7 @@
 
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        "format-muted": "",  // 正確的靜音圖示 (nf-mdi-volume-mute)
+        "format-muted": "",
         "format-icons": {
             "default": ["", "", ""]
         },
