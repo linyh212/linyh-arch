@@ -65,8 +65,10 @@
         "tooltip": "false"
     },
     "network": {
-        "format": " 󰖩",
-        "tooltip-format": "{essid}",
+        "format-wifi": " {essid} {signalStrength}%",
+        "format-ethernet": "󰈁 {ipaddr}",
+        "format-disconnected": "󰤮 Disconnected",
+        "tooltip-format": "{ifname} via {gwaddr}\nIPv4: {ipaddr}\nIPv6: {ip6addr}",
         "interval": 2
     },
     "pulseaudio": {
@@ -94,6 +96,6 @@
         "timezone": "Asia/Taipei",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": " {:%d/%m/%Y}",
-        "format": " {:%H:%M}"
+        "format": " {:%H:%M:%S}"
     }
 }

@@ -1,50 +1,49 @@
 * {
   font-family: "FantasqueSansMono Nerd Font", monospace;
-  font-size: 17px;
+  font-size: 12px;
   min-height: 0;
 }
 
 #waybar {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.2);
   color: #e5e5e5;
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
-  padding: 4px 12px;
-  margin: 6px;
+  border-radius: 10px;
+  padding: 3px 6px;
+  margin: 4px;
 }
 
 #workspaces button {
   color: #bbbbbb;
-  padding: 0 10px;
+  padding: 0 6px;
   background-color: transparent;
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   transition: background-color 0.2s ease;
 }
 
 #workspaces button.active {
   color: #d6a6c9;
-  background-color: rgba(214, 166, 201, 0.3);
+  background-color: rgba(214, 166, 201, 0.2);
 }
 
 #workspaces button:hover {
-  background-color: #242424;
+  background-color: #2a2a2a;
 }
 
 #tray {
-  padding-left: 4px;
-  border-radius: 1rem;
-  background-color: rgba(198, 184, 137, 0.3);
+  padding: 2px 6px;
+  border-radius: 0.75rem;
+  background-color: rgba(198, 184, 137, 0.25);
   color: #000;
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
 #custom-music {
   color: #b199c9;
-  border-radius: 1rem 0 0 1rem;
-  margin-left: 1rem;
-  background-color: rgba(177, 153, 201, 0.3);
-  padding: 0.3rem 0.8rem;
+  background-color: rgba(177, 153, 201, 0.2);
+  border-radius: 0.75rem 0 0 0.75rem;
+  padding: 2px 6px;
+  margin-left: 0.6rem;
 }
 
 #memory {
@@ -59,21 +58,24 @@
 
 #network {
   color: #c6b889;
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
 #pulseaudio {
   color: #9fa7d4;
+  margin-right: 4px;
 }
 
 #custom-powermenu {
   color: #c07b8a;
+  margin-right: 4px;
 }
 
 #clock {
-  color: #ffffffe9;
-  border-radius: 0 1rem 1rem 0;
-  background-color: rgba(137, 206, 244, 0.25);
-  padding: 0.3rem 0.8rem;
-  margin-right: 8px;
+  color: #ffffff;
+  opacity: 0.9;
+  background-color: rgba(137, 206, 244, 0.2);
+  padding: 2px 6px;
+  border-radius: 0 0.75rem 0.75rem 0;
+  margin-right: 6px;
 }
