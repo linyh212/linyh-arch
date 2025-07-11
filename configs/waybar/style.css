@@ -1,5 +1,3 @@
-@import "mocha.css";
-
 * {
   font-family: "FantasqueSansMono Nerd Font", monospace;
   font-size: 17px;
@@ -7,96 +5,75 @@
 }
 
 #waybar {
-  background: transparent;
-  color: @text;
-  margin: 5px 5px;
-}
-
-#workspaces {
-  border-radius: 1rem;
-  margin: 5px 5px 5px 1rem;
-  background-color: @surface0;
+  background: rgba(0, 0, 0, 0.25);
+  color: #e5e5e5;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  padding: 4px 12px;
+  margin: 6px;
 }
 
 #workspaces button {
-  color: @lavender;
+  color: #bbbbbb;
+  padding: 0 10px;
+  background-color: transparent;
+  border: none;
   border-radius: 1rem;
-  padding: 0.4rem;
+  transition: background-color 0.2s ease;
 }
 
 #workspaces button.active {
-  color: @sky;
-  border-radius: 1rem;
+  color: #d6a6c9;
+  background-color: rgba(214, 166, 201, 0.3);
 }
 
 #workspaces button:hover {
-  color: @sapphire;
-  border-radius: 1rem;
-}
-
-#custom-music,
-#tray,
-#backlight,
-#clock,
-#battery,
-#pulseaudio,
-#custom-lock,
-#custom-power {
-  background-color: @surface0;
-  padding: 0.5rem 1rem;
-  margin: 5px 0;
-}
-
-#clock {
-  color: @blue;
-  border-radius: 0px 1rem 1rem 0px;
-  margin-right: 1rem;
-}
-
-#battery {
-  color: @green;
-}
-
-#battery.charging {
-  color: @green;
-}
-
-#battery.warning:not(.charging) {
-  color: @red;
-}
-
-#backlight {
-  color: @yellow;
-}
-
-#backlight,
-#battery {
-  border-radius: 0;
-}
-
-#pulseaudio {
-  color: @maroon;
-  border-radius: 1rem 0px 0px 1rem;
-  margin-left: 1rem;
-}
-
-#custom-music {
-  color: @mauve;
-  border-radius: 1rem;
-}
-
-#custom-lock {
-  border-radius: 1rem 0px 0px 1rem;
-  color: @lavender;
-}
-
-#custom-power {
-  margin-right: 1rem;
-  border-radius: 0px 1rem 1rem 0px;
-  color: @red;
+  background-color: #242424;
 }
 
 #tray {
-  margin-right: 1rem;
+  padding-left: 4px;
   border-radius: 1rem;
+  background-color: rgba(198, 184, 137, 0.3);
+  color: #000;
+  margin-right: 8px;
+}
+
+#custom-music {
+  color: #b199c9;
+  border-radius: 1rem 0 0 1rem;
+  margin-left: 1rem;
+  background-color: rgba(177, 153, 201, 0.3);
+  padding: 0.3rem 0.8rem;
+}
+
+#memory {
+  color: #6aaec2;
+  margin-right: 4px;
+}
+
+#cpu {
+  color: #d6a673;
+  margin-right: 4px;
+}
+
+#network {
+  color: #c6b889;
+  margin-right: 8px;
+}
+
+#pulseaudio {
+  color: #9fa7d4;
+}
+
+#custom-powermenu {
+  color: #c07b8a;
+}
+
+#clock {
+  color: #ffffffe9;
+  border-radius: 0 1rem 1rem 0;
+  background-color: rgba(137, 206, 244, 0.25);
+  padding: 0.3rem 0.8rem;
+  margin-right: 8px;
 }

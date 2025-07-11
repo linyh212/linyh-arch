@@ -1,24 +1,47 @@
 {
     "layer": "top",
     "position": "top",
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["custom/music"],
-    "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray", "custom/lock", "custom/power"],
+    "modules-left": ["hyprland/workspaces", "tray"],
+    "modules-center": ["custom/music", "hyprland/window"],
+    "modules-right": ["memory", "cpu", "network", "pulseaudio", "custom/powermenu", "custom/separator", "clock"],
 
+    // left
     "hyprland/workspaces": {
-        "disable-scroll": true,
-        "sort-by-name": true,
+        "separate-outputs": false,
+        "active-only": false,
+        "all-outputs": false,
         "format": " {icon} ",
         "format-icons": {
-            "default": ""
+            // 1-10
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            // 11-10
+            "11": "1",
+            "12": "2",
+            "13": "3",
+            "14": "4",
+            "15": "5",
+            "16": "6",
+            "17": "7",
+            "18": "8",
+            "19": "9",
+            "110": "10"
         }
     },
-
     "tray": {
-        "icon-size": 21,
-        "spacing": 10
+        "icon-size": 16,
+        "spacing": 8
     },
 
+    // center
     "custom/music": {
         "format": "  {}",
         "escape": true,
@@ -28,34 +51,24 @@
         "on-click": "playerctl play-pause",
         "max-length": 50
     },
-
-    "clock": {
-        "timezone": "Asia/Dubai",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": " {:%d/%m/%Y}",
-        "format": " {:%H:%M}"
+    "hyprland/window": {
+        "format": "{}"
     },
-
-    "backlight": {
-        "device": "intel_backlight",
-        "format": "{icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    
+    // right
+    "memory": {
+        "format": "󰫗 {}% ",
+        "tooltip": "false"
     },
-
-    "battery": {
-        "states": {
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{icon}",
-        "format-charging": "",
-        "format-plugged": "",
-        "format-alt": "{icon}",
-        "format-icons": [
-            "", "", "", "", ""
-        ]
+    "cpu": {
+        "format": " {usage}% ",
+        "tooltip": "false"
     },
-
+    "network": {
+        "format": " 󰖩",
+        "tooltip-format": "{essid}",
+        "interval": 2
+    },
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted": "",
@@ -64,16 +77,23 @@
         },
         "on-click": "pavucontrol"
     },
-
-    "custom/lock": {
+    "custom/powermenu": {
+        "format": "󰤨",
         "tooltip": false,
-        "on-click": "sh -c '(sleep 0.5s; swaylock --grace 0)' & disown",
-        "format": ""
+        "exec": "rofi -show power-menu -modi power-menu:rofi-power-menu",
+        "on-click": "rofi -show power-menu -modi power-menu:rofi-power-menu"
     },
-
-    "custom/power": {
-        "tooltip": false,
-        "on-click": "wlogout &",
-        "format": ""
+    "custom/separator": {
+        "format": " | ",
+        "format-icons": {
+            "default": ""
+        },
+        "sort-by-name": true
+    },
+    "clock": {
+        "timezone": "Asia/Taipei",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": " {:%d/%m/%Y}",
+        "format": " {:%H:%M}"
     }
 }
