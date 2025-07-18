@@ -5,7 +5,7 @@
 
     ### Geometry ###
     width = 300
-    height = (0,300)
+    height = 300
     origin = top-center
     offset = 0x30
     scale = 0
@@ -24,13 +24,15 @@
     indicate_hidden = yes
     transparency = 30
     separator_height = 2
+    
     padding = 8
     horizontal_padding = 8
     text_icon_padding = 0
     frame_width = 1
     frame_color = "#ffffff"
     gap_size = 0
-    separator_color = frame
+    separator_color = "#ffffff"
+    
     sort = yes
     # idle_threshold = 120
 
@@ -46,6 +48,7 @@
     ignore_newline = no
     stack_duplicates = true
     hide_duplicate_count = false
+    
     show_indicators = yes
 
     ### Icons ###
@@ -54,7 +57,7 @@
     icon_position = left
     min_icon_size = 32
     max_icon_size = 128
-    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    icon_path = "/usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/"
 
     ### History ###
     sticky_history = yes
@@ -66,6 +69,7 @@
     always_run_script = true
     title = Dunst
     class = Dunst
+    
     corner_radius = 10
     ignore_dbusclose = false
 
