@@ -1,55 +1,58 @@
-## Quick Installation Script 🚀
+# Quick Installation Script 🚀
 
-    git clone https://github.com/linyh212/linyh-arch.git ~/linyh-arch
-    cd ~/linyh-arch
-    chmod +x install.sh
-    ./install.sh
-## Key Bindings 🎹
+``` tx=
+git clone https://github.com/linyh212/linyh-arch.git ~/linyh-arch
+cd ~/linyh-arch
+chmod +x install.sh
+./install.sh 
+```
 
-#### General
+# Key Bindings 🎹
 
-- `Super + T`: Open the terminal (`$terminal`).
-- `Super + B`: Open the browser (`$browser`).
-- `Super + O`: Open notes application (`$notes`).
-- `Super + C`: Open the primary editor (`$editor`).
-- `Super + S`: Open the alternative editor (`$editor-alt`).
-- `Super + F`: Open the file manager (`$fileManager`).
-- `Super + A`: Open the application menu (`$menu`).
-- `Super + M`: Exit Hyprland.
+## General
 
-#### Window Management & Workspace Navigation
+- `Super + Q`: Open the terminal (`$terminal`)  
+- `Super + E`: Open the file manager (`$fileManager`)  
+- `Super + R`: Open the application menu (`$menu`)  
+- `Super + L`: Logout using `wlogout`
+- `Super + M`: Lock screen
 
-- `Super + Q`: Close the active window.
-- `Super + W`: Toggle floating mode for the active window.
-- `Super + J`: Toggle split mode in the Dwindle layout.
-- `SUPER + [Arrow Keys]`: Move focus between windows
-- `SUPER + SHIFT + [Arrow Keys]`: Move active window
-- `SUPER + CTRL + [Arrow Keys]`: Resize active window
-- `SUPER + [1-9]`: Switch to workspace 1-9
-- `SUPER + SHIFT + [1-9]`: Move active window to workspace 1-9
+## Window Management & Workspace Navigation
 
-#### Screen Brightness, Volume and Media Control
+- `Super + C`: Close the active window  
+- `Super + V`: Toggle floating mode for the active window  
+- `Super + J`: Toggle split mode in the Dwindle layout  
+- `Super + P`: Toggle pseudo mode in the Dwindle layout  
+- `Super + [Arrow Keys]`: Move focus between windows  
+- `Super + Shift + [0–9]`: Move active window to workspace 1–10  
+- `Super + [0–9]`: Switch to workspace 1–10  
+- `Super + S`: Toggle special workspace `magic`  
+- `Super + Shift + S`: Move window to special workspace `magic`  
+- `Super + Scroll Up`: Switch to previous workspace  
+- `Super + Scroll Down`: Switch to next workspace  
+- `Super + Left Click (mouse:272)`: Move window by dragging  
+- `Super + Right Click (mouse:273)`: Resize window by dragging  
 
-- `Brightness Up`: Increase the screen brightness by 5%.
-- `Brightness Down`: Decrease the screen brightness by 5%.
-- `Volume Up`: Increase the volume by 5%.
-- `Volume Down`: Decrease the volume by 5%.
-- `Mic Mute`: Mute the microphone.
-- `Audio Mute`: Mute the audio.
-- `Play/Pause`: Toggle play/pause for media.
-- `Next Track`: Skip to the next track.
-- `Previous Track`: Go back to the previous track.
+## Screen Brightness, Volume and Media Control
 
-#### Miscellaneous
+- `Brightness Up`: Increase screen brightness by 5%  
+- `Brightness Down`: Decrease screen brightness by 5%  
+- `Volume Up`: Increase the volume by 5%  
+- `Volume Down`: Decrease the volume by 5%  
+- `Audio Mute`: Toggle audio mute  
+- `Mic Mute`: Toggle microphone mute  
+- `Play/Pause`: Toggle media playback (`playerctl`)  
+- `Next Track`: Play next media track  
+- `Previous Track`: Play previous media track  
 
-- `SUPER + L`: Lock screen
-- `Super + V`: Open the clipboard history and paste the selected item.
-- `Super + P`: Open the color picker and copy the selected color to the clipboard.
-- `Super + L`: Lock the screen.
-- `Super + Escape`: Open the logout menu.
-- `Ctrl + Escape`: Toggle the Waybar (kill if running, start if not).
-- `Print Screen`: Take a screenshot of the entire screen and copy it to the clipboard.
-- `Super + Print Screen`: Take a screenshot of the active window and copy it to the clipboard.
-- `Super + Alt + Print Screen`: Select an area to take a screenshot and copy it to the clipboard.
+## Screenshot & Miscellaneous (Not Yet Bound)
+
+> ⚠️ The following actions are **not yet defined** in your Hyprland `bind` config. You may consider adding them:
+
+- `Print Screen`: Take a full screenshot and copy to clipboard  
+- `Super + Print Screen`: Screenshot active window  
+- `Super + Alt + Print Screen`: Screenshot selected area  
+- `Super + Escape`: Open logout menu  
+- `Ctrl + Escape`: Toggle Waybar (kill/start)  
 
 Make sure to have applications installed corresponding to the binds. Feel free to customize these keybindings to better suit your needs. You can customize these and add more in your Hyprland configuration file (`~/.config/hypr/hyprland.conf`).
