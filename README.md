@@ -14,7 +14,7 @@ chmod +x install.sh
 - `Super + Q`: Open the terminal (`$terminal`)  
 - `Super + E`: Open the file manager (`$fileManager`)  
 - `Super + R`: Open the application menu (`$menu`)  
-- `Super + L`: Logout using `wlogout`
+- `Super + L`: Logout using `hyprlock`
 - `Super + M`: Lock screen
 
 ## Window Management & Workspace Navigation
