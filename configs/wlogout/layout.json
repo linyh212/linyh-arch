@@ -1,11 +1,5 @@
 [
   {
-    "label": "exit",
-    "action": "",
-    "text": "Exit",
-    "keybind": "h"
-  },
-  {
     "label": "shutdown",
     "action": "systemctl poweroff",
     "text": "Shutdown",

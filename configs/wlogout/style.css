@@ -75,7 +75,7 @@ button:focus {
     color: #11111b;
 }
 
-#exit {
+/*#exit {
     background-image: image(url("/home/linyh/.config/assets/wlogout/assets/restart.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
     background-color: #11111b;
 }
@@ -85,3 +85,13 @@ button:focus {
     color: #11111b;
     background-color: #cdd6f4;
 }
+#exit {
+    background-image: none;
+    background-color: #11111b;
+}
+
+#exit:hover {
+    background-image: none;
+    background-color: #cdd6f4;
+    color: #11111b;
+}*/
