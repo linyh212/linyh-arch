@@ -1,0 +1,12 @@
+{
+  "show": "drun",
+  "mode": "drun",
+  "term": "kitty",
+  "show_icons": true,
+  "allow_markup": true,
+  "insensitive": true,
+  "sort_order": "alphabetical",
+  "prompt": " Run:",
+  "hide_scroll": true
+}
+ 

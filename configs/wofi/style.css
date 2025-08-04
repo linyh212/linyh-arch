@@ -1,0 +1,37 @@
+window {
+    margin: 0px;
+    border: 2px solid rgba(245, 232, 199, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    font-family: FantasqueSansMono Nerd Font;
+    font-size: 16px;
+    backdrop-filter: blur(20px);
+    color: rgb(245, 232, 199);
+}
+
+#entry {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#entry:selected {
+    background-color: rgba(245, 232, 199, 0.2);
+    color: rgb(249, 217, 118);
+}
+
+#input {
+    margin: 5px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(245, 232, 199, 0.1);
+    color: rgb(245, 232, 199);
+}
+
+#input:focus {
+    outline: 2px solid rgb(249, 217, 118);
+}
+
+#scroll {
+    margin: 5px;
+}
